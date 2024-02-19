@@ -1,6 +1,9 @@
-/*CREATE USER 'william'@'localhost' IDENTIFIED WITH 'mysql_native_password' BY 'wesc';
+DROP USER 'william'@'localhost';
+CREATE USER 'william'@'localhost' IDENTIFIED WITH 'mysql_native_password' BY 'wesc';
 GRANT ALL PRIVILEGES ON PracticalTest.* TO 'william'@'localhost';
-FLUSH PRIVILEGES;*/
+FLUSH PRIVILEGES;
+
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'wesc';
 
 drop database if exists PracticalTest;
 create database PracticalTest;
